@@ -20,8 +20,33 @@
         <img src="images/modernlogo.jpg" alt="Image of store logo" height="300" width="300">
     </header>
     <main>
+        <h2>Customer Contact Form</h2>
+        <form action="/submit" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+            <br>
 
-   
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Example@example.com">
+            <br>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="size">Review</option>
+                <option value="color">Complaint</option>
+                <option value="other">More</option>
+            </select>
+            <br>
+
+            <label for="note">Notes:</label>
+            <textarea id="note" name="note" rows="4" cols="40"  maxlength="2000"></textarea>
+            <br>
+
+            <input type="submit" value="Submit">
+
+            <input type="reset" value="Reset">
+        </form>
+
     </main>
     <footer>
         <p>&copy; Copyright 2024 The Modern Cuisine | <a href="https://github.com/EileenVT" target="_blank">GitHub</a></p>
